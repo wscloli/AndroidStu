@@ -9,20 +9,20 @@ import android.widget.TextView;
 import java.net.HttpURLConnection;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-private Button send;
-private TextView res;
+    private Button send;
+    private TextView res;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        send=(Button) findViewById(R.id.send);
-        res=(TextView) findViewById(R.id.res);
+        send = (Button) findViewById(R.id.send);
+        res = (TextView) findViewById(R.id.res);
         send.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        if(v.getId()==R.id.send){
+        if (v.getId() == R.id.send) {
             send();
         }
     }
@@ -35,7 +35,7 @@ private TextView res;
         new Thread(new Runnable() {
             @Override
             public void run() {
-                HttpURLConnection connection=null;
+                HttpURLConnection connection = null;
 
             }
         }

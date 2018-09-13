@@ -1,5 +1,8 @@
 ﻿ 
-Ctrl + alt + L   整理规范代码
+Ctrl + Alt + L   整理规范代码
+
+File/Project Structure/app/Flavors    程序版本号
+Android minSDK 和 targetSDK 版本
 
 
 
