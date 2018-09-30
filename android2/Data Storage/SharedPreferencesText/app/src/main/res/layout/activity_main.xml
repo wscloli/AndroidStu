@@ -6,11 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/edit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="输入。。。"
-         />
+   <Button
+       android:id="@+id/save_data"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+        android:background="#66ccff"
+        android:text="保存"
+        />
 
 </LinearLayout>
