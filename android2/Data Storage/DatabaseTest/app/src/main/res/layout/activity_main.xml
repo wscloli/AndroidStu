@@ -4,62 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    tools:context=".MainActivity">
-    <Button
-        android:id="@+id/saveButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="创建数据库"
-        android:textSize="26dp"/>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:gravity="center">
-    <TextView
-        android:id="@+id/text_account"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="账户："
-        android:textSize="28dp"/>
-    <EditText
-        android:id="@+id/edit_account"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="28dp"
-        android:hint="请输入账户"/>
-
-</LinearLayout>
+    tools:context=".MainActivity"
+    android:id="@+id/main1_LinearLayout">
     <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
-        <TextView
-            android:id="@+id/text_pass"
+        android:layout_height="match_parent"
+        android:id="@+id/main_LinearLayout">
+        <Button
+            android:id="@+id/saveButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="密码："
-            android:textSize="28dp"/>
-        <EditText
-            android:id="@+id/edit_pass"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="28dp"
-            android:hint="请输入密码"/>
+            android:text="创建数据库"
+            android:textSize="26dp"/>
     </LinearLayout>
-    <CheckBox
-        android:id="@+id/checkbox_Save"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="26dp"
-        android:text="保存密码"/>
-    <Button
-        android:id="@+id/button_Click"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="28dp"
-        android:text="确认"/>
 </LinearLayout>
