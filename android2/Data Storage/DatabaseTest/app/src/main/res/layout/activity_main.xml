@@ -11,12 +11,19 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/main_LinearLayout">
+        android:id="@+id/main_LinearLayout"
+        >
         <Button
             android:id="@+id/saveButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="创建数据库"
+            android:textSize="26dp"/>
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加数据"
             android:textSize="26dp"/>
     </LinearLayout>
 </LinearLayout>
