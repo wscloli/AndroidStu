@@ -19,6 +19,8 @@ import android.widget.LinearLayout;
 public class MainActivity extends AppCompatActivity {
     private Button saveButton;
     private Button addButton;
+    private Button updateButton;
+
 
     private Button createButton;
     private CheckBox saveCheck;
@@ -80,8 +82,8 @@ public class MainActivity extends AppCompatActivity {
                 values.put("name", "C++");
                 values.put("author", "Wang");
                 values.put("pages", 454);
-                values.put("prices", 80);
-                //数据插入数据库中
+                values.put("price", 80);
+                //数据插入数据库
                 db.insert("Book", null, values);
                 //清除数据
                 values.clear();
@@ -89,12 +91,22 @@ public class MainActivity extends AppCompatActivity {
                 values.put("name", "Java");
                 values.put("author", "liu");
                 values.put("pages", 1500);
-                values.put("prices", 90);
+                values.put("price", 90);
                 db.insert("Book", null, values);
                 values.clear();
             }
         });
+//更新数据
+        updateButton=(Button) findViewById(R.id.updateButton);
+        updateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SQLiteDatabase db=dbHelper.getWritableDatabase();
+                ContentValues values=new ContentValues();
+                values.put("price",30);
+                db.update("Book",values,"name=?",new String[]{"C++"});
+            }
+        });
 
-
-    }
+    }4
 }
